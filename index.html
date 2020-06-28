@@ -15,9 +15,32 @@
         <h1>World Championship Boxing Form</h1>
         <p id="description">Fight and win the title of world champion, do you have what it takes?</p>
     </header>
-    <form action="" id="survey-form">
-        <input type="text" placeholder="Name" required />
-    </form>
+    <hr>
+    <div>
+        <form action="" id="survey-form">
+            <label for="name" id="name-label">Name</label><br>
+            <input type="text" placeholder="Required: Enter your name" id="name" required /><br><br>
+
+            <label for="email" id="email-label">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="Required: Enter your email" required /><br><br>
+
+            <label for="number" id="age-label">Age</label><br>
+            <input type="number" name="age" id="numer" placeholder="Age (Optional)" min="18" max="50" /><br><br>
+
+            <label for="boxer-type">Boxer Type</label><br>
+            <input list="boxer-type" placeholder="Dropdown (Select)">
+            <datalist id="boxer-type">
+                <option value="Aggressive">
+                <option value="Patient">
+                <option value="Strategic">
+            </datalist>
+            </select>
+
+
+
+        </form>
+
+    </div>
 
 </body>
 
