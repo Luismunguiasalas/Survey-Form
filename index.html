@@ -25,17 +25,40 @@
             <input type="email" name="email" id="email" placeholder="Required: Enter your email" required /><br><br>
 
             <label for="number" id="age-label">Age</label><br>
-            <input type="number" name="age" id="numer" placeholder="Age (Optional)" min="18" max="50" /><br><br>
+            <input type="number" name="age" id="numer" placeholder="Age (Optional)" min="18" max="50" /><br>
 
-            <label for="boxer-type">Boxer Type</label><br>
-            <input list="boxer-type" placeholder="Dropdown (Select)">
-            <datalist id="boxer-type">
+            <p>Choose your boxing style</p>
+            <input list="dropdown" placeholder="Dropdown (Select)">
+            <datalist id="dropdown">
                 <option value="Aggressive">
                 <option value="Patient">
                 <option value="Strategic">
             </datalist>
 
+            <p>Who's your favorite boxer?</p>
+            <input type="radio" name="favorite-boxer" id="Mike Tyson" value="mike tyson" checked="checked">
+            <label for="Mike Tyson">Mike Tyson</label><br>
+            <input type="radio" name="favorite-boxer" id="Muhammid Ali" value="muhammid ali">
+            <label for="Muhammid Ali">Muhammid Ali</label><br>
+            <input type="radio" name="favorite-boxer" id="Floyd Mayweather" value="floyd mayweather">
+            <label for="Floyd Mayweather">Floyd Mayweather</label>
 
+            <p>Choose your skillset</p>
+            <input type="checkbox" name="great-jab" id="jab" value='jab'>
+            <label for="jab">Great Jab</label><br>
+            <input type="checkbox" name="speed" id="speed" value="speed">
+            <label for="speed">Speed</label><br>
+            <input type="checkbox" name="head-movement" id="head-movement" value="head-movement">
+            <label for="head-movement">Head Movement</label><br>
+            <input type="checkbox" name="body-movement" id="body-movement" value="body-movement">
+            <label for="body-movement">Body Movement</label><br>
+            <input type="checkbox" name="power-punch" id="power-punch" value="power-punch">
+            <label for="power-punch">Power Punch</label><br>
+
+            <p>Any suggestions on who you would like to see fight next?</p>
+            <textarea name="Comments" id="" cols="30" rows="10" placeholder="Add a comment"></textarea><br><br>
+
+            <input type="submit" value="submit" id="submit">
 
         </form>
 
